@@ -1,0 +1,986 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    width: 100wh;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    display: flex;   
+}
+
+.sky{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2a77eb,#0846f1);
+    top: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    box-shadow: 10px 10px 100px green;
+    animation-name: anime-wrapper;
+    animation-duration: 20s;
+}
+
+.sun {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 10px 10px 100px yellow;
+    animation-name: sun;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+}
+
+.star span{
+    position: absolute;   
+    border-radius: 50%;
+    background-color: rgb(216, 214, 214);
+    box-shadow: 0 0 30px #fff;
+    animation-name: star;
+    animation-duration: 20s;
+
+}
+
+.star span:nth-child(1){
+    position: absolute;
+    top: 30px;
+    left: 1200px;
+}
+.star span:nth-child(2){
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+.star span:nth-child(3){
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+.star span:nth-child(4){
+    position: absolute;
+    top: 90px;
+    left: 150px;
+}
+.star span:nth-child(5){
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+.star span:nth-child(6){
+    position: absolute;
+    top: 200px;
+    left: 900px;
+}
+.star span:nth-child(7){
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}.star span:nth-child(8){
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+}
+
+@keyframes star{
+    0% {
+        width: 0;
+        height: 0;
+    }
+    10% {
+        width: 0;
+        height: 0;
+    }
+    20% {
+        width: 0;
+        height: 0;
+    }
+    30% {
+        width: 0;
+        height: 0;
+    }
+    40% {
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+    }
+    70% {
+        width: 10px;
+        height: 10px;
+    }
+    80% {
+        width: 10px;
+        height: 10px;
+    }
+    90% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@keyframes sun {
+    0% {
+        bottom: 0;
+        left: 30px;
+        background-color: rgb(247, 247, 48);
+        box-shadow: 10px 10px 100px yellow;
+    }
+    10% {
+        bottom: 350px;
+        left: 180px;
+        background-color: rgb(247, 247, 48);
+        box-shadow: 10px 10px 100px yellow;
+    }
+    20% {
+        bottom: 450px;
+        left: 600px;
+        background-color: rgb(247, 247, 48);
+        box-shadow: 10px 10px 100px yellow;
+    }
+    30% {
+        bottom: 300px;
+        left: 1000px;
+        background-color: rgb(247, 247, 48);
+        box-shadow: 10px 10px 100px yellow;
+    }
+    40% {
+        bottom: 10px;
+        left: 1190px;
+        background-color: rgb(247, 247, 48);
+        box-shadow: 10px 10px 100px yellow;
+    }
+    50%{
+        bottom: 0;
+        left: 30px;
+        background-color: #555353;
+        box-shadow: 0px 0px 25px #fff;
+    }
+    70% {
+        bottom: 360px;
+        left: 190px;
+        background-color: #555353;
+        box-shadow: 0px 0px 25px #fff;
+    }
+    80% {
+        bottom: 460px;
+        left: 610px;
+        background-color: #555353;
+        box-shadow: 0px 0px 25px #fff;
+    }
+    90% {
+        bottom: 310px;
+        left: 1010px;
+        background-color: #555353;
+        box-shadow: 0px 0px 25px #fff;
+    }
+    100% {
+        bottom: 11px;
+        left: 1191px;
+        background-color: #555353;
+        box-shadow: 0px 0px 25px #fff;
+    }
+}
+@keyframes anime-wrapper {
+    0% {
+        background-color: rgb(242, 248, 250);
+    }
+    10% {
+        background-color: rgb(94, 227, 250);
+    }
+    20% {
+        background-color: rgb(0, 138, 230);
+    }
+    30% {
+        background-color: rgb(241, 116, 70);
+    }
+    50% {
+        background-color: rgb(122, 122, 122);
+    }
+    70% {
+        background-color: rgb(102, 102, 102);
+    }
+    80% {
+        background-color: rgb(54, 48, 48);
+    }
+    90% {
+        background-color: rgb(75, 75, 75);
+    }
+    100% {
+        background-color: rgb(20, 19, 19);
+    }
+}
+
+.place{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    height: 40vh;
+    width: 100vw;
+    background: linear-gradient(to top, #48ff42,#189c13);
+    top: 390PX;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 30%;
+}
+
+.mountain span:nth-child(1){
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:30% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-70deg);
+}
+.mountain span:nth-child(4){
+    position: absolute;
+    bottom: 70px;
+    right: 62px;
+    width: 280px;
+    height: 304px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:20% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-35deg);
+}
+.mountain span:nth-child(5){
+    position: absolute;
+    bottom: 73px;
+    left: 228px;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:10% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-55deg);
+}
+
+.mountain span:nth-child(3){
+    position: absolute;
+    bottom: 250px;
+    right: 300px;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:30% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+.mountain span:nth-child(6){
+    position: absolute;
+    bottom: 100px;
+    right: 440px;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:10% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-45deg);
+}
+.mountain span:nth-child(2){
+    position: absolute;
+    bottom: 180px;
+    left: 400px;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to bottom, #101e3b,#03044e);
+    border: 25px solid #d9d9d9 ;
+    border-top-right-radius:30% ;
+    border-left: 0px;
+    border-bottom: 0px;
+    transform: rotate(-50deg);
+}
+
+.roof{
+    position: absolute;
+    right:  250px;
+    bottom: 200px;
+    height: 160px;
+    width: 160px;
+    background: linear-gradient(to top, #000000,#3a1500);
+    transform: rotate(-45deg);
+
+}
+
+.attic{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    background-color: white;
+    transform: rotate(-45deg);
+    animation-name: lamp;
+    animation-duration: 20s;
+}
+
+.attic span:nth-child(1){
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 5px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #000000;
+}
+.attic span:nth-child(2){
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000000;
+}
+
+.home{
+    position: absolute;
+    right: 250px;
+    bottom: 76px;
+    height: 200px;
+    width: 160px;
+    background: linear-gradient(to top, #ec622b,#cc4d04);
+}
+
+.terrace {
+    position: absolute;
+    right: 130px;
+    bottom: 76px;
+    height: 100px;
+    width: 120px;
+    background: linear-gradient(to top, #ec622b,#cc4d04);
+}
+
+.grid{
+    position: relative;
+    box-sizing: border-box;
+    bottom: 20px;
+    width: 120px;
+    height: 20px;
+    border:2px solid #000000;
+    border-left: 0 ;
+    border-bottom: 0;
+}
+
+.door{
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    right: 30px;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.door span:nth-child(1){
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: #000000;
+    top: 20px;
+    right: 3px;
+}
+.door span:nth-child(2){
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: 2px solid black;
+    background-color: #ffffff;
+    top: -15px;
+    right: 0px;
+    animation-name: lamp;
+    animation-duration: 20s;
+}
+
+.window span:nth-child(1){
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    width: 30px;
+    height: 40px;
+    background-color: #fff;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 50px;
+    animation-name: lamp;
+    animation-duration: 20s;
+    
+}
+
+.window span:nth-child(2){
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    width: 30px;
+    height: 40px;
+    background-color: #fff;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 50px;
+    animation-name: lamp;
+    animation-duration: 20s;
+    
+}
+
+.window span:nth-child(3){
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    width: 30px;
+    height: 40px;
+    background-color: #fff;
+    animation-name: lamp;
+    animation-duration: 20s;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 50px;
+    
+}
+
+.window span:nth-child(4){
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    width: 30px;
+    height: 40px;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 50px;
+    background-color: #fff;
+    animation-name: lamp;
+    animation-duration: 20s;
+}
+
+@keyframes lamp {
+    0% {
+        background-color: rgb(253, 253, 253);
+        box-shadow: 10px 10px 100px rgb(245, 245, 242);
+    }
+    10% {
+        background-color: rgb(253, 253, 253);
+        box-shadow: 10px 10px 100px rgb(245, 245, 242);
+    }
+    20% {
+        background-color: rgb(253, 253, 253);
+        box-shadow: 10px 10px 100px rgb(245, 245, 242);
+    }
+    30% {
+        background-color: rgb(253, 253, 253);
+        box-shadow: 10px 10px 100px rgb(245, 245, 242);
+    }
+    40% {
+        background-color: rgb(253, 253, 253);
+        box-shadow: 10px 10px 100px rgb(245, 245, 242);
+    }
+    50%{
+        background-color: yellow;
+        box-shadow: 0 0 250px rgb(247, 247, 48);
+    }
+    70% {
+        background-color: yellow;
+        box-shadow:  0  0 250px rgb(247, 247, 48);
+    }
+    80% {
+        background-color: yellow;
+        box-shadow:  0  0 250px rgb(247, 247, 48);
+    }
+    90% {
+        background-color: yellow;
+        box-shadow:  0  0 250px rgb(247, 247, 48);
+    }
+    100% {
+        background-color: yellow;
+        box-shadow:  0  0 250px rgb(247, 247, 48);
+    }
+
+}
+
+/* start street */
+.street{
+    position: absolute;
+    top: 575px;
+    width: 100vw;
+    height: 76px;
+    background: #2b2222;
+}
+
+.street span:nth-child(1){
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(2){
+    position: absolute;
+    bottom: 30px;
+    right: 200px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(3){
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(4){
+    position: absolute;
+    bottom: 30px;
+    right: 400px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(5){
+    position: absolute;
+    bottom: 30px;
+    right: 500px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(6){
+    position: absolute;
+    bottom: 30px;
+    right: 600px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(7){
+    position: absolute;
+    bottom: 30px;
+    right: 700px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(8){
+    position: absolute;
+    bottom: 30px;
+    right: 800px;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(9){
+    position: absolute;
+    bottom: 30px;
+    right: 900px;
+    width: 300px;
+    height: 10px;
+    background-color: #fff;
+
+}
+.street span:nth-child(10){
+    position: absolute;
+    bottom: 0;
+    right: 1200px;
+    width: 10px;
+    height: 77px;
+    background-color: #fff;
+
+}
+.traffic span:nth-child(1){
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    width: 20px;
+    height: 50px;
+    background-color: #ffffff;
+}
+.traffic span:nth-child(2){
+    position: absolute;
+    bottom: 120px;
+    left: 87px;
+    width: 50px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #000000;
+}
+
+.red{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(83, 0, 0);
+    animation-name:red ;
+    animation-duration: 15s;
+    animation-play-state: running;
+}
+
+@keyframes red{
+    0%{
+        background-color: rgb(83, 0, 0);
+    }
+    10%{
+        background-color: rgb(236, 0, 0);
+    }
+    20%{
+        background-color: rgb(83, 0, 0);
+    }
+    30%{
+        background-color: rgb(83, 0, 0);
+    }
+    40%{
+        background-color: rgb(83, 0, 0);
+    }
+    50%{
+        background-color: rgb(83, 0, 0);
+    }
+    60%{
+        background-color: rgb(83, 0, 0);
+    }
+    70%{
+        background-color: rgb(236, 0, 0);
+    }
+    80%{
+        background-color: rgb(83, 0, 0);
+    }
+    90%{
+        background-color: rgb(83, 0, 0);
+    }
+    100%{
+        background-color: rgb(83, 0, 0);
+    }
+    100%{
+        background-color: rgb(83, 0, 0);
+    }
+
+    
+}
+
+.yellow{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(121, 121, 4);
+    animation-name:yellow ;
+    animation-duration: 15s;
+    animation-play-state: running;
+}
+@keyframes yellow{
+    0%{
+        background-color: rgb(115, 117, 6);
+    }
+    10%{
+        background-color: rgb(115, 117, 6);
+    }
+    20%{
+        background-color: rgb(115, 117, 6);
+    }
+    
+    30%{
+        background-color: rgb(255, 217, 0);
+    }
+    40%{
+        background-color: rgb(115, 117, 6);
+    }
+    50%{
+        background-color: rgb(115, 117, 6);
+    }
+    60%{
+        background-color: rgb(115, 117, 6);
+    }
+    70%{
+        background-color: rgb(115, 117, 6);
+    }
+    80%{
+        background-color: rgb(255, 217, 0);
+    }
+    
+    90%{
+        background-color: rgb(115, 117, 6);     
+    }
+    100%{
+        background-color: rgb(115, 117, 6);
+    }
+
+}
+.green{
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    animation-name:green ;
+    animation-duration: 15s;
+    animation-play-state: running;
+}
+@keyframes green{
+    0%{
+        background-color: rgb(0, 94, 5);
+    }
+    10%{
+        background-color: rgb(0, 94, 5);
+    }
+    20%{
+        background-color: rgb(0, 94, 5);
+    }
+    30%{
+        background-color: rgb(0, 94, 5);
+    }
+    40%{
+        background-color: rgb(0, 94, 5);
+    }
+    50%{
+        background-color: rgb(21, 255, 0);
+    }
+    60%{
+        background-color: rgb(0, 94, 5);
+    }
+    70%{
+        background-color: rgb(0, 94, 5);
+    }
+    80%{
+        background-color: rgb(0, 94, 5);
+    }
+    90%{
+        background-color: rgb(0, 94, 5);
+    }
+
+    100%{
+        background-color: rgb(21, 255, 0);
+    }
+    
+}
+
+.tree-body{
+    position: absolute;
+    bottom: 80px;
+    right: 600px;
+    width: 20px;
+    height: 90px;
+    background-color: brown;
+}
+.tree-head{
+    position: absolute;
+    bottom: 120px;
+    right: 575px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: green;
+}
+.tree-head span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5df058;
+    animation-name: apple ;
+    animation-duration: 20s;
+}
+.tree-head span:nth-child(1){
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.tree-head span:nth-child(2){
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.tree-head span:nth-child(3){
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+@keyframes apple {
+    0%{
+        background-color: #5df058;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: red;        
+    }
+    100%{
+        background-color: red;        
+    }
+}
+
+
+.img img{
+    position: absolute;
+    right: 190px;
+    bottom: 65px;
+    width: 70px;
+    height: 50px;
+    animation-name: motobike ;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-play-state: running;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes motobike{
+    0%{
+        bottom: 65px;
+        right: 190px     ;
+    }
+    
+    25%{
+        bottom: 45px;
+        right: 800px 
+    }
+    50%{
+        bottom: 5px;
+        right: 850px;
+    } 
+    
+    80%{
+        bottom: 5px;
+        right: 1050px;
+    }
+    95%{
+        bottom: 45px;
+        right: 1100px;
+    }
+    100%{
+        bottom: 45px;
+        right: 1500px;
+    }
+}
+
+.radar img{
+    position: absolute;
+    left: 100px;
+    bottom: 190px;
+    width: 70px;
+    height: 50px;
+}
+
+.car-1 img{
+        position: absolute;
+        left: -70px;
+        bottom: 5px;
+        width: 70px;
+        height: 50px;    
+        animation-duration: 10s;
+        animation-name: car-1;
+        animation-delay: 10s;
+}  
+
+@keyframes car-1{
+    0%{
+        left: -70px;
+        bottom: 5px;
+    }
+    100%{
+        left: 1220px;
+        bottom: 5px;
+    }
+}
+
+.CAR img{
+    position: absolute;
+        right: 0px;
+        bottom: 25px;
+        width: 90px;
+        height: 80px;   
+        animation-name: red-car ;
+        animation-duration: 12s;
+        animation-timing-function: ease-out;
+}
+
+@keyframes red-car{
+    0%{
+        right: 0px;
+        bottom: 30px;
+    }
+    
+    25%{
+            bottom: 30px;
+            right: 895px;
+    }
+    50%{
+        bottom: 30px;
+        right: 895px;
+    }
+    60%{
+        bottom: 30px;
+        right: 895px;
+    }
+    80%{
+        bottom: 30px;
+        right: 900px;
+    }
+    90%{
+        right: 1000px;
+        bottom: 30px;
+    }
+    95%{
+        right: 1000px;
+        bottom: 30px;
+    }
+    100%{
+        right: 1500px;
+        bottom: 30px;
+    }
+    
+}
